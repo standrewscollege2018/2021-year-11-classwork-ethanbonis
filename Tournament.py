@@ -24,4 +24,4 @@ else:
     if Again == "n":
         Continue = False
         print("ok")
-print("Highest Bidding Price is: ${} made by {}".format(max_bid, leader))
+print("Highest Bidding Price is: ${} made by {}".format(winner, score))
