@@ -1,5 +1,7 @@
-jm,# This is a quiz wow
+# This is a quiz wow
 A = 6
+B = "Thats Correct"
+C = "Thats Incorrect"
 ask_name = True
 while ask_name == True:
     name = input("Whats your name ")
@@ -14,19 +16,13 @@ while questions_theory == True:
         print("How many questions do you")
         questions_right = int(input("think you will get right? "))
         questions_theory = False
-    if questions_right <=A:
-    print("A")
+        if questions_right >A:
+            print("I mean there's only 6 question but ya know, aim high")
     except:
-        print("Answer needs to be a number ")
+                print("Answer needs to be a number ")
     else:
-        print("ok")
+                print("ok")
 questions_1 = True
 while questions_1 == True:
     try:
-        first_question = int(input("How many states are there in America "))
-        first_question = False
-    except:
-        print("Answer needs to be a number ")
-    else:
-        print("ok")
 
