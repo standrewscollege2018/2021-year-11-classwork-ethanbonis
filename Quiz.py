@@ -1,7 +1,9 @@
 # This is a quiz wow
+score = 0
+question_list = ["How many states are there in the U.S", "What is the capital of malasia", "Are you a cool person", "Rudolph had a red what", "Who plays the most recent Spider Man", "What colour is grass"]
+answer_list = ["50", "Kuala Lumpur", "yes", "no", "Tom Holland", "green"]
 A = 6
-B = "Thats Correct"
-C = "Thats Incorrect"
+
 ask_name = True
 while ask_name == True:
     name = input("Whats your name ")
@@ -22,7 +24,18 @@ while questions_theory == True:
                 print("Answer needs to be a number ")
     else:
                 print("ok")
-questions_1 = True
-while questions_1 == True:
-    try:
+for i in range(len(question_list)):
+    print("{}".format(question_list[i]))
+    answer = input()
+    if answer == answer_list[i]:
+        print("yes")
+        score += 1
+
+    else:
+        print("no")
+
+if answer == answer_list[5]:
+    print("final score is", score)
+else:
+    print("Final score is", score)
 
